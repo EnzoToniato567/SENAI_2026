@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+} 
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    background-color: rgb(207, 251, 251);
+}
+
+h1 {
+    color: #16151a;
+}
+
+input {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #008d0e;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #16151a;
+    color: aqua;
+    cursor: pointer;
+}
+
+.pagina {
+    left: 10px;
+    padding: 6px 12px;
+    margin: 10px;
+    border: 1px solid #fff;
+    background-color: rgb(57, 196, 101);
+    color: rgb(255, 255, 255);
+}
+
+.pagina:hover {
+    background-color: rgb(163, 189, 198);
+}
+
+button:hover {
+    background-color: #444;
+}
+
+p {
+    margin: 10px;
+  color:#333;
+}
