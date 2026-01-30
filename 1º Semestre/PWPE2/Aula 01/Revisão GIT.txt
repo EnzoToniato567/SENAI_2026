@@ -9,3 +9,5 @@ git add .   //Verifica arquivos alterados
 git commit -m "Algum comentário" //Verifica as alterações nos arquivos
 
 git push //Envia as alterações para o repositório
+
+//Criação de Branchs
