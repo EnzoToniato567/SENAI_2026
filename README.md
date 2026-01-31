@@ -13,7 +13,5 @@ Siga os passos abaixo para enviar seus arquivos para o GitHub:
 
 ```bash
 git add .
-```bash
 git commit -m "Descrição do que foi alterado"
-```bash
 git push
