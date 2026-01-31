@@ -1,16 +1,17 @@
 function reajustar() {
-    let preco = Number(document.getElementById('preco').value);
+    let mensalidade = Number(document.getElementById('mensalidade').value);
+    let diasAtraso = Number(document.getElementById('diasAtraso').value);
     let resultado = document.getElementById('resultado');
-    let desconto = 0;
+    let multa = 0;
 
-    if (preco > 1000) {
-        desconto = preco * 8 / 100;
+    if (diasAtraso > 0) {
+        multa = mensalidade * 2 / 100;
     }
 
-    let precoComDesconto = preco - desconto;
+    let totalPagar = mensalidade + multa;
 
     resultado.innerHTML = `
-    Desconto de R$ ${desconto.toFixed(2)} <br>
-    Preço final de R$ ${precoComDesconto.toFixed(2)}
+    Valor da multa: R$ ${multa.toFixed(2)} <br>
+    Valor total a pagar: R$ ${totalPagar.toFixed(2)}
     `;
 }
