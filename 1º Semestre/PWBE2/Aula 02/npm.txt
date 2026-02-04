@@ -1,0 +1,18 @@
+//Projeto NodeJs iniciar
+
+npm init -y 
+
+//Instalar as dependências
+
+express; cors; mysql2; dotenv
+
+npm i express cors mysql2 dotenv
+
+//Criar arquivo server.js 
+
+modelo nesta aula 2
+
+//Opcional 
+
+instalar dependência nodemon
+npm i nodemon

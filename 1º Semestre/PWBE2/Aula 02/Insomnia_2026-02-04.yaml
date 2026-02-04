@@ -1,0 +1,389 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755866961514
+  modified: 1755866961514
+  description: ""
+collection:
+  - name: Biblioteca
+    meta:
+      id: fld_e79f2fd06801448b84dc73681fede3ac
+      created: 1756466410368
+      modified: 1757080436674
+      sortKey: -1756466410368
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_905db5fa1e28441086bfcfdcfbc3c4a1
+          created: 1756466454620
+          modified: 1756475684537
+          sortKey: -1756466454620
+          description: ""
+  - name: Música
+    meta:
+      id: fld_b38e4b2099204abab62ace6e15d30c26
+      created: 1757078297820
+      modified: 1758287647180
+      sortKey: -1757078297820
+      description: ""
+    children:
+      - name: Musicas
+        meta:
+          id: fld_58e21a3a16184ad3892b59be50ee71d1
+          created: 1757078767352
+          modified: 1757078767352
+          sortKey: -1757078767352
+          description: ""
+      - name: Playlist
+        meta:
+          id: fld_331c6e24c24c44509b7da5c305c70684
+          created: 1757079261517
+          modified: 1757079278953
+          sortKey: -1757079261517
+          description: ""
+      - name: Playlist Musicas
+        meta:
+          id: fld_797bb21afa6c4f5d931d13a42aacf0f4
+          created: 1757080553185
+          modified: 1757080553185
+          sortKey: -1757079014434.5
+          description: ""
+      - name: Usuarios
+        meta:
+          id: fld_c15cb639c9f34d67ab9371bda9e4dd88
+          created: 1757092521996
+          modified: 1757092521996
+          sortKey: -1757078409866
+          description: ""
+  - name: "Loja Prova "
+    meta:
+      id: fld_d2d8dd4c699f4022b983e32fc338c26c
+      created: 1758287663411
+      modified: 1758287684734
+      sortKey: -1758287663411
+      description: ""
+    children:
+      - name: Pedidos
+        meta:
+          id: fld_62b849273d1b428cab5e8f9b2054c86d
+          created: 1758287680401
+          modified: 1758287680401
+          sortKey: -1758287680401
+          description: ""
+      - name: Clientes
+        meta:
+          id: fld_466a268e42264570bfe456566b2705e4
+          created: 1758287692919
+          modified: 1758287692919
+          sortKey: -1758287692919
+          description: ""
+      - name: Produtos
+        meta:
+          id: fld_3420055aba0444878ad44bc62733d5e1
+          created: 1758288143262
+          modified: 1758288181556
+          sortKey: -1758287704867
+          description: ""
+  - name: Locadora
+    meta:
+      id: fld_647fdad3ddec4a1699645d172e31d0e8
+      created: 1758893248331
+      modified: 1759510122623
+      sortKey: -1758893248331
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_6b4a550c5b9d466d8022a4a71042e72c
+          created: 1758895772451
+          modified: 1758895772451
+          sortKey: -1758895772451
+          description: ""
+      - name: Filmes
+        meta:
+          id: fld_3e6009eccb6c43149c173659df006c2e
+          created: 1758895811014
+          modified: 1758895811014
+          sortKey: -1758895811014
+          description: ""
+      - name: Locações
+        meta:
+          id: fld_5acc22c3c83442afbffdef0967a3cc71
+          created: 1759240125441
+          modified: 1759240133282
+          sortKey: -1758895811114
+          description: ""
+  - name: Futebol
+    meta:
+      id: fld_bcc65bb660344468bdf072ba383f856e
+      created: 1759510085307
+      modified: 1759510085307
+      sortKey: -1759510085307
+      description: ""
+    children:
+      - name: Times
+        meta:
+          id: fld_0def021bb5f54d93be51a10ecc6f02ad
+          created: 1759510105194
+          modified: 1759510118539
+          sortKey: -1759510118496
+          description: ""
+      - name: Partidas
+        meta:
+          id: fld_e15398ac3d9d48cd8d8ee3a2e57d63ff
+          created: 1759510137620
+          modified: 1759510137620
+          sortKey: -1759510101901.5
+          description: ""
+  - name: Postagem
+    meta:
+      id: fld_0737d05533ab4357b31d48911ab71f25
+      created: 1760703433712
+      modified: 1760703433712
+      sortKey: -1760703433712
+      description: ""
+    children:
+      - name: Login
+        meta:
+          id: fld_79c861810a4844558ffef7cb77deabd4
+          created: 1760703479731
+          modified: 1760703479731
+          sortKey: -1760703479731
+          description: ""
+      - name: Post
+        meta:
+          id: fld_0e4ad3835e1c4ee680c46b931f9917ea
+          created: 1760703491922
+          modified: 1760703491922
+          sortKey: -1760703491922
+          description: ""
+  - name: Educatech
+    meta:
+      id: fld_f2d80c149e8743e18d5b0b5e0b4cffa2
+      created: 1761074142709
+      modified: 1761074142709
+      sortKey: -1761074142709
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_8a8b5ae870b249b38405f96e03e808bd
+          created: 1761074188421
+          modified: 1761074398714
+          sortKey: -1761074380495
+          description: ""
+      - name: Temperaturas
+        meta:
+          id: fld_6daee4817b984931ad583eb33a439bfc
+          created: 1761074200627
+          modified: 1761074391926
+          sortKey: -1761074380395
+          description: ""
+      - name: Presenças
+        meta:
+          id: fld_2896fa475327452ea035701b991f75d9
+          created: 1761074213823
+          modified: 1761074380350
+          sortKey: -1761074380295
+          description: ""
+  - name: Clínica Vida+
+    meta:
+      id: fld_8b88fc226e024414bb0292303f1bdd38
+      created: 1761920269510
+      modified: 1762513522566
+      sortKey: -1761920269510
+      description: ""
+    children:
+      - name: Consultas
+        meta:
+          id: fld_337e6cbba448415abe494dd960865b28
+          created: 1762513342864
+          modified: 1762513342864
+          sortKey: -1762513342864
+          description: ""
+      - name: Pacientes
+        meta:
+          id: fld_87ca756a55b84349965b4baf0246b219
+          created: 1762513359152
+          modified: 1762513359152
+          sortKey: -1762513359152
+          description: ""
+      - name: Médicos
+        meta:
+          id: fld_999d51f8b6954442a818fb5306236393
+          created: 1762513374860
+          modified: 1762513374860
+          sortKey: -1762513374860
+          description: ""
+      - name: Login
+        meta:
+          id: fld_d580e08fa08d4b8aa1c4934fc9301ced
+          created: 1762513400874
+          modified: 1762513414902
+          sortKey: -1762513374960
+          description: ""
+      - name: Relatórios
+        meta:
+          id: fld_5fd1aa0cabe04c939aca8ad62f133607
+          created: 1762513507466
+          modified: 1762513507466
+          sortKey: -1762513507466
+          description: ""
+      - name: "Usuários "
+        meta:
+          id: fld_8d8392803984408eac700f522308d126
+          created: 1762513540904
+          modified: 1762514485613
+          sortKey: -1762513540904
+          description: ""
+  - name: Hotel
+    meta:
+      id: fld_0c2ec44cf06948308b444b6b463c8b05
+      created: 1763120670110
+      modified: 1763120670110
+      sortKey: -1763120670110
+      description: ""
+    children:
+      - name: Hóspedes
+        meta:
+          id: fld_eb83b3fc51444600bee1e3ca7f40be52
+          created: 1763120682880
+          modified: 1763120682880
+          sortKey: -1763120682880
+          description: ""
+      - name: Quartos
+        meta:
+          id: fld_6cea776eaa0446a29954c67b1d0de4ad
+          created: 1763120690681
+          modified: 1763120690681
+          sortKey: -1763120690681
+          description: ""
+      - name: Reservas
+        meta:
+          id: fld_320b0afbc4ef4a9a9a2efe19cfd68e6a
+          created: 1763120704043
+          modified: 1763120711702
+          sortKey: -1763120704043
+          description: ""
+      - name: Login
+        meta:
+          id: fld_75e2a307ee3c4959ab8d8728c832ad23
+          created: 1763120725123
+          modified: 1763120763969
+          sortKey: -1763120725123
+          description: ""
+  - name: Sala de Estudos Prova
+    meta:
+      id: fld_f260af78fcad47f3b7b420f3e4d27e26
+      created: 1764328008274
+      modified: 1764328008274
+      sortKey: -1764328008274
+      description: ""
+    children:
+      - name: Alunos
+        meta:
+          id: fld_f5cd33a38b7a4eb08be94c7888f1a9fe
+          created: 1764329307135
+          modified: 1764329307135
+          sortKey: -1764329307135
+          description: ""
+      - name: Salas
+        meta:
+          id: fld_8613c921b60a4b8aa268810b2a26526b
+          created: 1764329328600
+          modified: 1764329328600
+          sortKey: -1764329328600
+          description: ""
+      - name: Reservas
+        meta:
+          id: fld_1eb72722d2e546dbba0940657a830cd5
+          created: 1764329336759
+          modified: 1764329336759
+          sortKey: -1764329336759
+          description: ""
+      - name: Relatórios
+        meta:
+          id: fld_a1298e06f0c64c27acdeb8c26691d094
+          created: 1764329347308
+          modified: 1764329347308
+          sortKey: -1764329347308
+          description: ""
+  - name: Backend teste
+    meta:
+      id: fld_25a92f25482f42ba8bb619eaf373ab84
+      created: 1770235335819
+      modified: 1770235335819
+      sortKey: -1770235335819
+      description: ""
+    children:
+      - url: http://localhost:3000/lista/cadastro
+        name: Cadastrar
+        meta:
+          id: req_0cff5d664ff1464396f00bb7581cd2ad
+          created: 1770235340347
+          modified: 1770235494194
+          isPrivate: false
+          description: ""
+          sortKey: -1770235340347
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"item": "Item 3",
+            	"valor": 34.89
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/lista
+        name: Listar
+        meta:
+          id: req_862e22c03c6c45189a06449f1133fe55
+          created: 1770235342834
+          modified: 1770235420758
+          isPrivate: false
+          description: ""
+          sortKey: -1770235342834
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466018058
+    modified: 1756466018058
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466017957
+    modified: 1756466017957
+    isPrivate: false
