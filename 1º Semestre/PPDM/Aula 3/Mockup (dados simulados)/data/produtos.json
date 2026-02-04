@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "nome": "Camiseta regata",
+        "descricao": "Camiseta regata masculina",
+        "preco": 38.9,
+        "quantidade": 10,
+        "img": ""
+    },
+
+    {
+        "id": 2,
+        "nome": "Calça jeens",
+        "descricao": "Calça jeens masculina azul escura",
+        "preco": 56.9,
+        "quantidade": 4,
+        "img": ""
+    },
+
+    {
+        "id": 3,
+        "nome": "Camiseta polo",
+        "descricao": "Camiseta polo masculina",
+        "preco": 30.5,
+        "quantidade": 7,
+        "img": ""
+    },
+
+    {
+        "id": 4,
+        "nome": "Tênis nike",
+        "descricao": "Tênis nike masculino e feminino",
+        "preco": 245.9,
+        "quantidade": 20,
+        "img": "https://cdn.dooca.store/946/products/rhadmvi74hi9gjkitrpr9qetefian57yxmpf.jpg?v=1666871237"
+    },
+
+    {
+        "id": 5,
+        "nome": "Calça cargo",
+        "descricao": "Calça cargo preta",
+        "preco": 149.8,
+        "quantidade": 16,
+        "img": "https://images.tcdn.com.br/img/img_prod/726059/cala_cargo_utility_preta_1_20250825170147_7afde48eb25c.png"
+    },
+
+    {
+        "id": 6,
+        "nome": "Camiseta jeens",
+        "descricao": "Camiseta jeens azul clara",
+        "preco": 52.7,
+        "quantidade": 23,
+        "img": "https://www.calitta.com/4878-large_default/camisa-jeans-fino-slim-azul-masculina-calitta-social-manga-longa.jpg"
+    },
+
+    {
+        "id": 7,
+        "nome": "Chuteira umbro",
+        "descricao": "Chuteira umbro masculina laranja e preto",
+        "preco": 290.0,
+        "quantidade": 12,
+        "img": "https://d1q83jvjv6c875.cloudfront.net/Custom/Content/Products/15/65/156528_chuteira-campo-umbro-frame-masculina-laranja-preto141976_m4_638235473808662671.webp"
+    },
+
+    {
+        "id": 8,
+        "nome": "Jaqueta couro",
+        "descricao": "Jaqueta de couro masculina preta",
+        "preco": 320.0,
+        "quantidade": 5,
+        "img": ""
+    },
+
+    {
+        "id": 9,
+        "nome": "Vestido floral",
+        "descricao": "Vestido feminino estampado floral",
+        "preco": 180.5,
+        "quantidade": 8,
+        "img": ""
+    },
+
+    {
+        "id": 10,
+        "nome": "Boné adidas",
+        "descricao": "Boné adidas ajustável azul marinho",
+        "preco": 75.9,
+        "quantidade": 12,
+        "img": ""
+    }   
+
+]
