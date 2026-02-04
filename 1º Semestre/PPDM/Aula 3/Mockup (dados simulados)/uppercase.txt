@@ -1,4 +1,0 @@
-lowercase
-snake_case
-camelCase - variáveis e modelos
-CamelCase - classes
