@@ -1,4 +1,21 @@
+const { PrismaClient } = require("@prisma/client");
 const con = require("../data/conecction");
+
+const prisma = new PrismaClient();
+
+const lista2 = async (req, res) => {
+    try {
+        
+        const lista = await prisma.lista.findMany();
+
+        res.json(lista).status(201).end(); 
+
+    } catch (err) {
+        res.json(err).status(500).end();
+    }
+};
+
+//////////////////////////////////////////////////////
 
 const listarItens = async (req, res) => {
     try {
@@ -25,6 +42,7 @@ const cadastrarItem = async (req, res) => {
 };
 
 module.exports = {
+    lista2,
     listarItens,
     cadastrarItem
 }

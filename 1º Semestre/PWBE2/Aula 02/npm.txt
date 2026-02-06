@@ -16,3 +16,11 @@ modelo nesta aula 2
 
 instalar dependência nodemon
 npm i nodemon
+
+//prisma @prisma/client
+
+npm i prisma @prisma/client
+
+npx prisma init --datasource-provider mysql
+
+npx prisma migrate dev
