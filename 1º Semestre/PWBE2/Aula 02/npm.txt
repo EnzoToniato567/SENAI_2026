@@ -23,4 +23,8 @@ npm i prisma @prisma/client
 
 npx prisma init --datasource-provider mysql
 
+npm i @prisma/adapter-mariadb
+
 npx prisma migrate dev
+
+npx prisma generate
