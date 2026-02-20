@@ -315,7 +315,7 @@ collection:
     meta:
       id: fld_25a92f25482f42ba8bb619eaf373ab84
       created: 1770235335819
-      modified: 1770235335819
+      modified: 1771583436038
       sortKey: -1770235335819
       description: ""
   - name: Escola teste
@@ -584,12 +584,12 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: http://localhost:3000/alunos/buscar/1
+          - url: http://localhost:3000/alunos/buscar/2
             name: Buscar
             meta:
               id: req_3d7fc147ad514b00bc0f29878abceb29
               created: 1771012483630
-              modified: 1771012534514
+              modified: 1771584273691
               isPrivate: false
               description: ""
               sortKey: -1771012185777
