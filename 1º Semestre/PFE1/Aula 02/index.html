@@ -27,21 +27,20 @@
     </main> 
 
     <!-- Modal -->
-     <div id="modal" class="modal">
-        <div class="modal-content">
+     <div id="modalCliente" class="modal"> <!-- ID tem que ser diferente da classe, pois é único -->
+        <form id="cadCli" class="modal-content">
             <h2>Novo Cliente</h2>
-
-            <input type="text" id="cpf" placeholder="CPF">
-            <input type="text" id="nome" placeholder="Nome">
-            <input type="text" id="sobrenome" placeholder="Sobrenome">
-            <input type="date" id="nascimento">
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+            <input type="date" name="nascimento" required>
 
             <div class="modal-buttons">
-                <button onclick="salvarCliente()">Salvar</button>
-                <button onclick="fecharModal()">Cancelar</button>
+                <button type="submit">Salvar</button>
+                <button type="reset">Cancelar</button>
             </div>
-        </div>
-     </div>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 
