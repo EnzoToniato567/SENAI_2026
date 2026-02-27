@@ -9,8 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"      // MariaDB usa provider mysql
-  url = env("DATABASE_URL")
+  provider = "mysql"
 }
 
 model carros {

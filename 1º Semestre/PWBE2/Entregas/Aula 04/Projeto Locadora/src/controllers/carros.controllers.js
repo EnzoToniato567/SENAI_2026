@@ -1,6 +1,22 @@
 const prisma = require("../data/prisma");
 
-const cadastrarCarro = async (req, res) => {
+const listar = async (req, res) => {
+    const lista = await prisma.carros.findMany();
+
+    res.json(lista).status(200).end();
+};
+
+const buscar = async (req, res) => {
+    const { id } = req.params;
+    
+    const item = await prisma.carros.findUnique({
+        where: { id: Number(id) }
+    });
+
+    res.json(item).status(200).end();
+};
+
+const cadastrar = async (req, res) => {
     try {
         const carro = req.body;
 
@@ -86,11 +102,11 @@ const cadastrarCarro = async (req, res) => {
 
         if (ano.length !== 4) {
             return res.status(400).json({erro:"O Ano deve ter exatamente 4 caracteres."});
-        };
+        }
 
         ano = ano.split("");
 
-        if (isNaN(ano)) {
+        if (ano.some(isNaN)) {
             return res.status(400).json({erro:"O Ano deve conter apenas números."});
         }
 
@@ -108,6 +124,32 @@ const cadastrarCarro = async (req, res) => {
     }
 };
 
+const atualizar = async (req, res) => {
+    const { id } = req.params;
+    const dados = req.body;
+    
+    const item = await prisma.carros.update({
+        where: { id: Number(id) },
+        data: dados
+    });
+
+    res.json(item).status(200).end();
+};
+
+const excluir = async (req, res) => {
+    const { id } = req.params;
+    
+    const item = await prisma.carros.delete({
+        where: { id: Number(id) }
+    });
+
+    res.json(item).status(200).end();
+};
+
 module.exports = {
-    cadastrarCarro
+    cadastrar,
+    listar,
+    buscar,
+    atualizar,
+    excluir
 }

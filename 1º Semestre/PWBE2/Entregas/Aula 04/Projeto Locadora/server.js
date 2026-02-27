@@ -11,8 +11,8 @@ app.use(cors());
 const clientesRoutes = require("./src/routes/clientes.routes");
 const carrosRoutes = require("./src/routes/carros.routes");
 
-app.use("/turmas", clientesRoutes);
-app.use("/alunos", carrosRoutes);
+app.use(clientesRoutes);
+app.use(carrosRoutes);
 
 const porta = process.env.PORT_APP || 3000;
 
