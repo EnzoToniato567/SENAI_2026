@@ -1,30 +1,24 @@
-//Projeto NodeJs iniciar
+// Projeto NodeJs iniciar
+npm init -y                     // Cria um arquivo package.json automaticamente sem perguntas
 
-npm init -y 
+// Instalar as dependências
+npm i express cors mysql2 dotenv // Instala o framework Express, middleware CORS, driver MySQL2 e dotenv para variáveis de ambiente
 
-//Instalar as dependências
+// Criar arquivo server.js
+// modelo nesta aula 2            // Arquivo principal do servidor, onde ficará a configuração inicial
 
-express; cors; mysql2; dotenv
+// Opcional
+npm i nodemon                   // Instala o Nodemon para reiniciar o servidor automaticamente ao salvar alterações
 
-npm i express cors mysql2 dotenv
+// Prisma @prisma/client
+npm i prisma @prisma/client     // Instala o Prisma ORM e o cliente para interagir com o banco de dados
 
-//Criar arquivo server.js 
+npx prisma init --datasource-provider mysql   // Inicializa o Prisma configurando o MySQL como banco de dados
 
-modelo nesta aula 2
+npm i @prisma/adapter-mariadb   // Instala adaptador para usar MariaDB junto com Prisma
 
-//Opcional 
+npx prisma migrate dev          // Cria e aplica migrações no banco de dados em ambiente de desenvolvimento
 
-instalar dependência nodemon
-npm i nodemon
+npx prisma generate             // Gera o cliente Prisma baseado no schema definido
 
-//prisma @prisma/client
-
-npm i prisma @prisma/client
-
-npx prisma init --datasource-provider mysql
-
-npm i @prisma/adapter-mariadb
-
-npx prisma migrate dev
-
-npx prisma generate
+npx prisma migrate dev --name init   // Cria uma migração inicial nomeada "init" e aplica ao banco
