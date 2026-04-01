@@ -7,17 +7,11 @@ app.use(express.json());
 app.use(cors());
 
 const inscricoesRoutes = require('./src/routes/inscricoes.routes');
-
-app.use('/inscricoes', inscricoesRoutes);
-
-
 const eventosRoutes = require('./src/routes/eventos.routes');
-
-app.use('/eventos', eventosRoutes);
-
-
 const usuariosRoutes = require('./src/routes/usuarios.routes');
 
+app.use('/eventos', eventosRoutes);
+app.use('/inscricoes', inscricoesRoutes);
 app.use('/usuarios', usuariosRoutes);
 
 
@@ -25,4 +19,5 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
+  console.log (`Confira o insomnia para testar`);
 });

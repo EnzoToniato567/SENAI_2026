@@ -1,5 +1,6 @@
 const prisma = require("../data/prisma");
 const { limiteInscricoes } = require("../services/inscricoes.services");
+const { inscricaoDuplicada } = require("../services/inscricoes.services");
 
 const cadastrar = async (req, res) => {
     try {

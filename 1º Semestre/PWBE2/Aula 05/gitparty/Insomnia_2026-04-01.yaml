@@ -1,0 +1,438 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_30c0fafa22104a21abecbf3ffed98ea3
+  created: 1771699340503
+  modified: 1775046382782
+  description: ""
+collection:
+  - name: gitparty
+    meta:
+      id: fld_1849172358e8425ba9179284da922d0b
+      created: 1773423376556
+      modified: 1773423376556
+      sortKey: -1773423376556
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_749577d7c59942549721c16988b89178
+          created: 1773423376572
+          modified: 1773423376572
+          sortKey: -1773423376572
+          description: ""
+        children:
+          - url: http://localhost:3000/usuarios/listar
+            name: Listar
+            meta:
+              id: req_69b99215862b43e7991c3c6e4c982951
+              created: 1773423376575
+              modified: 1773423376575
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376575
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuarios/buscar/1
+            name: Buscar
+            meta:
+              id: req_eb63d0d2825d4859a30f74209de04449
+              created: 1773423376576
+              modified: 1775046688449
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376576
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuarios/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_4ba55f26bbde43ac8c9276d42915a9e1
+              created: 1773423376578
+              modified: 1773423749358
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376578
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nome": "Usuario 4",
+                  "email": "usuario4@gmai.com",
+                  "senha": "senha3564"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuarios/atualizar/3
+            name: Atualizar
+            meta:
+              id: req_4188871b649e4518b1b11e40727ea8f8
+              created: 1773423376582
+              modified: 1773423729138
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376582
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"senha": "senha0986"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/usuarios/excluir/4
+            name: Excluir
+            meta:
+              id: req_5a8bd8b6ecb14e0dbde8bf0e889d0591
+              created: 1773423376584
+              modified: 1773423755769
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376584
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Eventos
+        meta:
+          id: fld_63841b423e694cecb448158f76c8eeb1
+          created: 1773423376585
+          modified: 1773423376585
+          sortKey: -1773423376585
+          description: ""
+        children:
+          - url: http://localhost:3000/eventos/listar
+            name: Listar
+            meta:
+              id: req_974f87e6175a4b16a01df346fada3c0d
+              created: 1773423376586
+              modified: 1773423376586
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376586
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/eventos/buscar/2
+            name: Buscar
+            meta:
+              id: req_a5672386673d4eea8667af9d46854c01
+              created: 1773423376587
+              modified: 1773425789340
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376587
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/eventos/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_0c2083d343674722a1f1cebcffb43516
+              created: 1773423376589
+              modified: 1775047099164
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376589
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "titulo": "Título 3",
+                  "descricao": "Descrição 3",
+                  "data_evento": "2026-03-19 19:00",
+                  "local": "Local 3",
+                  "capacidade_maxima": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/eventos/atualizar/2
+            name: Atualizar
+            meta:
+              id: req_37828d6ba13146e1a265ead3e7dc6706
+              created: 1773423376590
+              modified: 1773425878353
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376590
+            method: PUT
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/eventos/excluir/1
+            name: Excluir
+            meta:
+              id: req_f870f7af7c804277a319a52536c90f3c
+              created: 1773423376591
+              modified: 1773425453647
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376591
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Inscricoes
+        meta:
+          id: fld_a23467bf80b844d2b673736ef5a70404
+          created: 1773423376592
+          modified: 1773423376592
+          sortKey: -1773423376592
+          description: ""
+        children:
+          - url: http://localhost:3000/inscricoes/listar
+            name: Listar
+            meta:
+              id: req_a7aca4b580d348298e812aff71abc70d
+              created: 1773423376593
+              modified: 1773423376593
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376593
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/inscricoes/buscar/3
+            name: Buscar
+            meta:
+              id: req_24e95c5302e84d87a02618ee094df699
+              created: 1773423376595
+              modified: 1775047393450
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376595
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/inscricoes/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_2e7b1eaa39ba48628acaab7db2eaaf97
+              created: 1773423376598
+              modified: 1775051216895
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376598
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "usuariosId": 1,
+                  "eventosId": 3
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/inscricoes/atualizar/:id
+            name: Atualizar
+            meta:
+              id: req_96cbd3720ea94a96a5b42014514376d1
+              created: 1773423376600
+              modified: 1773423376600
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376600
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "data_inscricao": "2026-03-13T17:32:17.975Z",
+                  "usuariosId": 0,
+                  "eventosId": 0
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/inscricoes/excluir/6
+            name: Excluir
+            meta:
+              id: req_33669853c2ef4ae7b6677ae8104a5921
+              created: 1773423376602
+              modified: 1773431498058
+              isPrivate: false
+              description: ""
+              sortKey: -1773423376602
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a4a96d752afea78f0085d475062beeffc7adfa05
+    created: 1775046382838
+    modified: 1775046382838
+environments:
+  name: Base Environment
+  meta:
+    id: env_87a591adbb5c4981a9a5d40baba4ad07
+    created: 1756466017957
+    modified: 1775046382667
+    isPrivate: false
