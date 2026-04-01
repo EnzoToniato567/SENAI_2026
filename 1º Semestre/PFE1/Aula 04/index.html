@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de Receitas</title>
+</head>
+<body>
+
+<header>
+    <h1>Site de Receitas</h1>
+    <div>
+        <button onclick="abrirModal()">+ Nova Receita</button>
+    </div>
+</header>
+
+<main>
+    <div id="dados" class="lista"></div>
+</main>
+
+<div id="modalReceita">
+    <div class="modal">
+        <h2>Nova Receita</h2>
+
+        <form id="cadReceita">
+            <input type="text" name="nome" placeholder="Nome da Receita" required>
+            <input type="text" name="tipo" placeholder="Tipo" required>
+            <input type="text" name="ingredientes" placeholder="Ingredientes" required>
+            <input type="text" name="preparo" placeholder="Modo de Preparo" required>
+            <input type="url" name="img" placeholder="URL da Imagem">
+            <input type="number" name="custo" placeholder="Custo R$" max="100000" min="1" step="0.01" required>
+
+            <div class="botoes-form">
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="fecharModal()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
