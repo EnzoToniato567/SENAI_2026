@@ -1,0 +1,5 @@
+Frontend gitparty
+
+1 pagina - lista de eventos, modal para cadastro de novo evento, excluir evento.
+
+2 pagina - detalhes do evento, upload de imagem, listar imagens (galeria)

@@ -11,7 +11,7 @@ const cadastrar = async (req, res) => {
     const caminhoFinal = `${pastaFinal}/${arquivo.filename}`;
 
     if (!fs.existsSync(pastaFinal)) {
-      fs.mkdirSync(pastaFinal, { recursive: true }); // fs = file system
+      fs.mkdirSync(pastaFinal, { recursive: true });
     }
 
     fs.renameSync(arquivo.path, caminhoFinal);

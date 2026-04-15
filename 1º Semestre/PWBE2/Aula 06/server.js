@@ -7,10 +7,12 @@ app.use(express.json());
 app.use(cors());
 
 const imagemRoutes = require("./src/routes/imagem.routes");
+
+app.use("/imagem", imagemRoutes);
+
 const publicacaoRoutes = require("./src/routes/publicacao.routes");
 
 app.use("/publicacao", publicacaoRoutes);
-app.use("/imagem", imagemRoutes);
 
 const PORT = process.env.PORT || 3000;
 

@@ -3,7 +3,7 @@ const multer = require("multer");
 const validarNomeArquivo = (req, file, callback) => {
   const nomePublicacao = req.body.nome || "arquivo";
 
-  const nomeFormatado = nomePublicacao.toLowerCase().replaceAll(" ", "-"); // deixa minusculo, remove os espaços em branco e coloca ifem
+  const nomeFormatado = nomePublicacao.toLowerCase().replaceAll(" ", "-");
 
   const nomeFinal = Date.now() + "-" + nomeFormatado + ".jpg";
 
@@ -15,7 +15,7 @@ const definirDestino = (req, file, callback) => {
 };
 
 const filtrarExtensao = (req, file, callback) => {
-  if (file.mimetype === "image/jpg" || file.mimetype === "image/jpeg") {
+  if (file.mimetype === "image/jpeg") {
     callback(null, true);
   } else {
     callback(new Error("Apenas imagens JPEG são permitidas"));
