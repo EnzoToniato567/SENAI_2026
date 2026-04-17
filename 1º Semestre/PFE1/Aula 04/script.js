@@ -1,7 +1,6 @@
 const url = 'https://receitasapi-b-2025.vercel.app';
 const receitas = [];
 let receitaAtual = null;
-
 carregarReceitas();
 
 function carregarReceitas(){
@@ -12,7 +11,7 @@ function carregarReceitas(){
         receitas.push(...data);
         listarCards();
     })
-    .catch(e => alert('Problemas com a conexão da API'));
+    .catch(() =>alert('Problemas com a conexão da API'));
 }
 
 function listarCards(){
@@ -25,54 +24,99 @@ function listarCards(){
 
         card.innerHTML = `
         <h3>${receita.nome}</h3>
-        <img src="${receita.img}" alt="${receita.nome}">
+        <img src="${receita.img}"alt="${receita.nome}">
         <p>Custo Aproximado: ${receita.custoAproximado}</p>
         `;
         card.onclick = () => abrirReceita(receita);
         container.appendChild(card);
     });
 }
-
-function abrirReceita(receita) {
+function abrirReceita(receita){
     receitaAtual = receita;
     tituloReceita.innerHTML = receita.nome;
     nomeEdit.value = receita.nome;
-    imgEdit.src = receita.img;
+    imgReceita.src = receita.img;
     imgEdit.value = receita.img;
     tipoEdit.value = receita.tipo;
     ingredientesEdit.value = receita.ingredientes;
     modoEdit.value = receita.modoFazer;
     custoEdit.value = receita.custoAproximado ?? '';
     detalhes.classList.remove('oculto');
+
 }
+imgEdit.addEventListener("input",()=>{
+    imgReceita.src = imgEdit.value;
+});
 
-imgEdit.addEventListener("input", () => {
-        imgReceita.src = imgEdit.value;
-    });
+document.querySelector('#formCad').addEventListener('submit',function(e){
+e.preventDefault();
+const novaReceita = {
+    nome: nome.value,
+    tipo: tipo.value,
+    ingredientes:ingredientes.value,
+    modoFazer: modoFazer.value,
+    img: urlImagem.value,
+    custoAproximado: custoAproximado.value ? Number(custoAproximado.value) : null
+};
 
-document.querySelector('#formCard').addEventListener('submit', function(e){
-    e.preventDefault();
+fetch(url + '/receitas',{
+    method:'POST',
 
-    const novaReceita = {
-        nome: nome.value,
-        tipo: tipo.value,
-        ingredientes: ingredientes.value,
-        modoFazer: modoFazer.value,
-        img: urlImagem.value,
-        custoAproximado: custoAproximado.value ? Number(custoAproximado.value) : null
+    headers:{
+        'Content-Type':'application/json'
+    },
+
+    body: JSON.stringify(novaReceita)
+})
+.then(()=>{
+    alert("Receita adicionada com sucesso!");
+
+    cadastro.classList.add('oculto');
+
+    carregarReceitas();
+})
+.catch(()=>alert("Erro ao salvar receita"));
+
+});
+
+function salvarEdicao(){
+    const receitaEditada = {
+        nome: nomeEdit.value,
+        tipo: tipoEdit.value,
+        ingredientes: ingredientesEdit.value,
+        modoFazer: modoEdit.value,
+        img: imgEdit.value,
+        custoAproximado: custoEdit.value ? Number(custoEdit.value) : null
     };
 
-    fetch(url + '/receitas', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json' 
+    fetch(url + '/receitas/' + receitaAtual.id,{
+        method:'PUT',
+        headers:{
+            'Content-Type':'application/json'
         },
-        body: JSON.stringify(novaReceita)
+        body:JSON.stringify(receitaEditada)
     })
-    .then(() => {
-        alert("Receita cadastrada com sucesso!");
-        cadastro.classList.add('oculto');
+    .then(res => {
+        if(!res.ok) throw new Error();
+        return res.json();
+    })
+    .then(()=> {
+        alert("Receita atualizada com sucesso!");
+        detalhes.classList.add('oculto');
         carregarReceitas();
     })
-    .catch(() => alert("Erro ao salvar receita"));
-});
+    .catch(()=>alert("Erro ao editar receita"));
+}
+
+function excluirReceitaAtual(params) {
+    if(!confirm("Deseja excluir a receita?")) return;
+    fetch(url + '/receitas/' + receitaAtual.id, {
+        method: 'DELETE'
+    })
+    .then(()=> {
+        alert("Receita exclída com sucesso!");
+        detalhes.classList.add('oculto');
+        carregarReceitas();
+    })
+    .catch(()=>alert("Erro ao excluir receita"));
+}
